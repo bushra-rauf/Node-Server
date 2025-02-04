@@ -61,16 +61,23 @@ if (fullpath.path ==="/") {
     res.write("<a href='./aboutme&name=bushra'>AboutMe</a>")
     res.write("<a href='./myfamilyname=myfamily'>MyFamily</a>")
     res.write("<h2> My Sweet family!</h2>")
+    res.write("<p>My deepest love, and my truest self. They are my heart, my home, and my forever.</p>")
+    res.write("<h3> My World</h3>")
+    res.write("<div>Family: where life begins and love never ends")
+    res.write("<p>Family gives us the strength to carry on, the wisdom to grow, and the love to thrive.</p>")
+    res.write("<p>That's beautiful! Family truly is everything and having them as your world brings so much joy and fulfillment. Every shared moment, every laugh, every challenge faced together strengthens the bond that keeps us close.")
+    res.write("<p>With every shared laugh and tear, they remind us that we are never alone</div>")
+    res.write("<h3> Life is Good!")
 }
 
-fs.readFile('./data/footer.html',(err,data) => {
-        if (err) {
-            console.log('Oops! check your code ')
-        } else {
-            res.write(data)
-        }
+// fs.readFile('./data/footer.html',(err,data) => {
+//         if (err) {
+//             console.log('Oops! check your code ')
+//         } else {
+//             res.write(data)
+//         }
         
-  })
+//   })
      
 }) .listen(PORT, ()=> console.log(`connecting on port ${PORT}`))
 
